@@ -1,5 +1,5 @@
-/*
-    5. Realização de comprar para os demais tipos de ingresso
+/* 
+    1. Crie uma lógica para que o usuário não possa incrementar um valor menor que zero
 */
 
 limpaCampos();
@@ -7,7 +7,14 @@ limpaCampos();
 function comprar(){
     let tipoIngresso = document.getElementById('tipo-ingresso').value;
     let quantidade = parseInt(document.getElementById('qtd').value);
+
+    if (quantidade < 0) {
+        alert('Quantidade inválida');
+        limpaCampos()
+        return;
+    } 
     
+
     if(tipoIngresso == 'pista'){
         comprarPista(quantidade);
     } else if (tipoIngresso == 'superior') {
