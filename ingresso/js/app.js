@@ -1,5 +1,6 @@
 /* 
-    1. Crie uma lógica para que o usuário não possa incrementar um valor menor que zero
+    1.refatoração: 
+        1.1 -> refatorar toda a parte de compra de ingressos. No momento, existem várias funções que fazem basicamente as mesmas coisas.  
 */
 
 limpaCampos();
